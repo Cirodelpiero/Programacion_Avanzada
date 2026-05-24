@@ -1,0 +1,101 @@
+[
+    {
+        "id": 2,
+        "nombre": "Californication",
+        "anio": 1999,
+        "precio": 150,
+        "stock": 12,
+        "banda": "RHCP",
+        "imagen_principal": "califor.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Smell like teen spirit",
+        "anio": 1991,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Nirvana",
+        "imagen_principal": "nevermind.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Ten",
+        "anio": 1991,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Pearl Jam",
+        "imagen_principal": "ten.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Pablo Honey",
+        "anio": 1994,
+        "precio": 150,
+        "stock": 12,
+        "banda": "RADIOHEAD",
+        "imagen_principal": "radio.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Buenos Aires",
+        "anio": 2026,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Padre Guillerme",
+        "imagen_principal": "padre.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Voodoo Lounge",
+        "anio": 1993,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Rolling stone",
+        "imagen_principal": "voodoo.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Use your ilussion",
+        "anio": 2026,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Guns and roses",
+        "imagen_principal": "guns.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Grestest Hits",
+        "anio": 2026,
+        "precio": 150,
+        "stock": 12,
+        "banda": "Aerosmith",
+        "imagen_principal": "aero.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Dookie",
+        "precio": 18,
+        "stock": 12,
+        "banda": "Green Day",
+        "imagen_principal": "dookie.jpg",
+        "anio": 1994
+    },
+    {
+        "id": 11,
+        "nombre": "Wonderwall",
+        "precio": 87,
+        "stock": 55,
+        "banda": "Oasis",
+        "imagen_principal": "oasis.jpg",
+        "anio": 1995
+    },
+    {
+        "id": 12,
+        "nombre": "Blood sugar sex magik",
+        "precio": 55,
+        "stock": 22,
+        "banda": "Red Hot Chili Peppers",
+        "imagen_principal": "blood.jpg",
+        "anio": 1991
+    }
+]

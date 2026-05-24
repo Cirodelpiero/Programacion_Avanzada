@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "nombre": "Blood Sugar Sex Magic",
+        "precio": 1991,
+        "stock": 12,
+        "banda": "RHCP",
+        "imagen_principal": "remeraNirvana.jpg",
+        "talle": "L"
+    }
+]
