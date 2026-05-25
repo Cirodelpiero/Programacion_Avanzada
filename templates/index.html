@@ -177,7 +177,7 @@
             <div class="card h-100 shadow-lg">
 
                 <img
-                src="{{ url_for('static', filename='img/' + remera.imagen_principal) }}"
+                src="{{ url_for('static', filename='img/imgRemeras/' + remera.imagen_principal) }}"
                 class="card-img-top imagen-disco"
                 alt="Disco">
 
@@ -194,6 +194,11 @@
                     <p class="fw-bold">
                         ${{ remera.precio }}
                     </p>
+
+                    <p class="fw-bold">
+                        ${{ remera.talle }}
+                    </p>
+
 
                     <a
                     href="/remera/{{ remera.id }}"
