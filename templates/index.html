@@ -98,19 +98,40 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 
-  <h1 class="mt-5 text-center" id="discos">VINILOS</h1>
+  var swiper = new Swiper(".mySwiper", {
+
+    loop: true,
+
+    autoplay: {
+
+      delay: 3000,
+
+      disableOnInteraction: false,
+
+    },
+
+    pagination: {
+
+      el: ".swiper-pagination",
+
+      type: "progressbar",
+
+    },
+
+    navigation: {
+
+      nextEl: ".swiper-button-next",
+
+      prevEl: ".swiper-button-prev",
+
+    },
+
+  });
+
+</script>
+
+  <h1 class="mt-5 text-center titulo-seccion" id="discos">VINILOS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">
@@ -165,7 +186,7 @@
 
 
 
-    <h1 class="mt-5 text-center" id="remeras" >REMERAS</h1>
+    <h1 class="mt-5 text-center titulo-seccion" id="remeras" >REMERAS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">
@@ -224,7 +245,7 @@
 
 
 
-<h1 class="mt-5 text-center" id="tazas" >TAZAS</h1>
+<h1 class="mt-5 text-center titulo-seccion" id="tazas" >TAZAS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">

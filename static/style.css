@@ -30,6 +30,12 @@ body {
       color: #fff;
       margin: 0;
       padding: 0;
+      background-image: url("/static/img/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
     }
 
     .swiper {
@@ -100,5 +106,17 @@ body {
 .menu-navbar .nav-link:hover{
 
     color: orange;
+
+}
+
+.titulo-seccion{
+
+    color: yellow;
+
+    text-shadow: 3px 3px 8px black;
+
+    font-weight: bold;
+
+    margin-top: 150px;
 
 }
