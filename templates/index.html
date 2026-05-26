@@ -34,16 +34,16 @@
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vinilos</a>
+          <a class="nav-link" href="#discos">Vinilos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tazas</a>
+          <a class="nav-link" href="#tazas">Tazas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Remeras</a>
+          <a class="nav-link" href="#remeras">Remeras</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/dashboard">
@@ -110,7 +110,7 @@
     });
   </script>
 
-  <h1 class="mt-5 text-center">VINILOS</h1>
+  <h1 class="mt-5 text-center" id="discos">VINILOS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">
@@ -165,7 +165,7 @@
 
 
 
-    <h1 class="mt-5 text-center">REMERAS</h1>
+    <h1 class="mt-5 text-center" id="remeras" >REMERAS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">
@@ -196,7 +196,7 @@
                     </p>
 
                     <p class="fw-bold">
-                        ${{ remera.talle }}
+                        Talle: {{ remera.talle }}
                     </p>
 
 
@@ -224,38 +224,42 @@
 
 
 
-<h1 class="mt-5 text-center">TAZAS</h1>
+<h1 class="mt-5 text-center" id="tazas" >TAZAS</h1>
     <div class="container mt-15">
 
     <div class="row g-4">
 
-        {% for disco in discos %}
+        {% for taza in tazas %}
 
         <div class="col-md-4">
 
             <div class="card h-100 shadow-lg">
 
                 <img
-                src="{{ url_for('static', filename='img/' + disco.imagen_principal) }}"
+                src="{{ url_for('static', filename='img/imgTazas/' + taza.imagen_principal) }}"
                 class="card-img-top imagen-disco"
                 alt="Disco">
 
                 <div class="card-body text-center">
 
                     <h5 class="card-title">
-                        {{ disco.nombre }}
+                        {{ taza.nombre }}
                     </h5>
 
                     <p class="card-text">
-                        {{ disco.banda }}
+                        {{ taza.banda }}
                     </p>
 
                     <p class="fw-bold">
-                        ${{ disco.precio }}
+                        ${{ taza.precio }}
+                    </p>
+
+                    <p class="fw-bold">
+                        {{ taza.capacidad }} ML
                     </p>
 
                     <a
-                    href="/disco/{{ disco.id }}"
+                    href="/taza/{{ taza.id }}"
                     class="btn btn-primary">
 
                         <i class="fa-solid fa-eye"></i>
@@ -296,7 +300,7 @@
                 <h3>Quiénes Somos</h3>
 
                 <p>
-                    Vinyl Store es una tienda dedicada a la venta de
+                    Vinyl Record es una tienda dedicada a la venta de
                     discos de vinilo, remeras y productos musicales
                     para fanáticos del rock y la cultura retro.
                 </p>
@@ -315,7 +319,7 @@
 
             <div class="col-md-4">
 
-                <h3>Contacto</h3>
+                <h3 id="contacto" >Contacto</h3>
 
                 <p>📍 Argentina</p>
                 <p>📧 vinylstore@gmail.com</p>

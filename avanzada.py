@@ -9,6 +9,7 @@ from services.disco_service import editar_disco
 
 
 from services.remera_service import obtener_remeras
+from services.taza_service import obtener_tazas
 
 #from models.disco import Disco
 #from models.remera import Remera
@@ -23,11 +24,13 @@ def inicio():
 
     discos = obtener_discos()
     remeras = obtener_remeras()
+    tazas = obtener_tazas()
 
     return render_template(
         "index.html",
         discos=discos,
-        remeras = remeras
+        remeras = remeras,
+        tazas = tazas
         
     )
 
