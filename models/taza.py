@@ -1,7 +1,7 @@
 from models.producto import Producto
 
 class Taza(Producto): 
-    def __init__(self, nombre, precio, stock, banda, imagen_principal, material, capacidad):
+    def __init__(self, id, nombre, precio, stock, banda, imagen_principal, material, capacidad):
         super().__init__(id, nombre, precio, stock, banda, imagen_principal)
         self.material = material
         self.capacidad = capacidad

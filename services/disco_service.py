@@ -1,5 +1,5 @@
 import json
-
+from models.disco import Disco
 def obtener_discos():
 
     with open("database/discos.json", "r") as archivo:
@@ -87,3 +87,34 @@ def editar_disco(disco_editado):
             archivo,
             indent=4
         )
+def guardar_discos(discos):
+
+    with open("database/discos.json", "w") as archivo:
+
+        json.dump(
+            discos,
+            archivo,
+            indent=4
+        )
+
+def comprar_disco(id):
+    discos = obtener_discos()
+
+    for disco in discos:
+        if disco["id"] == id:
+
+            
+            producto = Disco(
+                id=disco["id"],
+                nombre=disco["nombre"],
+                precio=disco["precio"],
+                stock=disco["stock"],
+                banda=disco["banda"],
+                imagen_principal=disco["imagen_principal"],
+                anio=disco["anio"]
+)
+            producto.vender_unidad()
+            disco["stock"] = producto.stock
+            break
+
+    guardar_discos(discos)

@@ -6,6 +6,9 @@ from services.disco_service import eliminar_disco
 from services.disco_service import crear_disco
 from services.disco_service import generar_id
 from services.disco_service import editar_disco
+from services.disco_service import comprar_disco
+
+
 
 
 from services.remera_service import obtener_remeras
@@ -155,6 +158,16 @@ def eliminar(id):
 
     return redirect("/dashboard")
     
+
+
+@app.route("/comprar-disco/<int:id>")
+def comprar_disco_route(id):
+
+    comprar_disco(id)
+
+    return redirect("/") 
+
+
     
 @app.route("/ejemplo")
 def ejemplo():

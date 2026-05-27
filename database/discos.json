@@ -4,7 +4,7 @@
         "nombre": "Californication",
         "anio": 1999,
         "precio": 150,
-        "stock": 12,
+        "stock": 8,
         "banda": "RHCP",
         "imagen_principal": "califor.jpg"
     },
@@ -13,7 +13,7 @@
         "nombre": "Smell like teen spirit",
         "anio": 1991,
         "precio": 150,
-        "stock": 12,
+        "stock": 149,
         "banda": "Nirvana",
         "imagen_principal": "nevermind.jpg"
     },
@@ -22,7 +22,7 @@
         "nombre": "Ten",
         "anio": 1991,
         "precio": 150,
-        "stock": 12,
+        "stock": 10,
         "banda": "Pearl Jam",
         "imagen_principal": "ten.jpg"
     },
@@ -40,7 +40,7 @@
         "nombre": "Buenos Aires",
         "anio": 2026,
         "precio": 150,
-        "stock": 12,
+        "stock": 146,
         "banda": "Padre Guillerme",
         "imagen_principal": "padre.jpg"
     },
@@ -49,7 +49,7 @@
         "nombre": "Voodoo Lounge",
         "anio": 1993,
         "precio": 150,
-        "stock": 12,
+        "stock": 149,
         "banda": "Rolling stone",
         "imagen_principal": "voodoo.jpg"
     },
@@ -65,11 +65,11 @@
     {
         "id": 9,
         "nombre": "Grestest Hits",
-        "anio": 2026,
         "precio": 150,
         "stock": 12,
         "banda": "Aerosmith",
-        "imagen_principal": "aero.jpg"
+        "imagen_principal": "aero.jpg",
+        "anio": 1994
     },
     {
         "id": 10,
@@ -93,7 +93,7 @@
         "id": 12,
         "nombre": "Blood sugar sex magik",
         "precio": 55,
-        "stock": 22,
+        "stock": 54,
         "banda": "Red Hot Chili Peppers",
         "imagen_principal": "blood.jpg",
         "anio": 1991
