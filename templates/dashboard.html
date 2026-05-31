@@ -88,7 +88,15 @@ class="btn btn-success mb-3">
 
             <td>${{ disco.precio }}</td>
 
-            <td>{{ disco.stock }}</td>
+            <td>
+                 {% if disco.stock_bajo_alerta %}
+                    <span style="color:red;font-weight:bold;">
+                        {{ disco.stock }} - (Reponer)
+                    </span>
+                {% else %}
+                    {{ disco.stock }}
+                {% endif %}
+            </td>
 
             <td>{{ disco.banda }}</td>
 

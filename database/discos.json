@@ -4,9 +4,10 @@
         "nombre": "Californication",
         "anio": 1999,
         "precio": 150,
-        "stock": 8,
+        "stock": 3,
         "banda": "RHCP",
-        "imagen_principal": "califor.jpg"
+        "imagen_principal": "califor.jpg",
+        "stock_bajo_alerta": true
     },
     {
         "id": 3,
@@ -15,7 +16,8 @@
         "precio": 150,
         "stock": 149,
         "banda": "Nirvana",
-        "imagen_principal": "nevermind.jpg"
+        "imagen_principal": "nevermind.jpg",
+        "stock_bajo_alerta": false
     },
     {
         "id": 4,
@@ -24,16 +26,18 @@
         "precio": 150,
         "stock": 10,
         "banda": "Pearl Jam",
-        "imagen_principal": "ten.jpg"
+        "imagen_principal": "ten.jpg",
+        "stock_bajo_alerta": false
     },
     {
         "id": 5,
         "nombre": "Pablo Honey",
         "anio": 1994,
         "precio": 150,
-        "stock": 12,
+        "stock": 4,
         "banda": "RADIOHEAD",
-        "imagen_principal": "radio.jpg"
+        "imagen_principal": "radio.jpg",
+        "stock_bajo_alerta": true
     },
     {
         "id": 6,
@@ -42,7 +46,8 @@
         "precio": 150,
         "stock": 146,
         "banda": "Padre Guillerme",
-        "imagen_principal": "padre.jpg"
+        "imagen_principal": "padre.jpg",
+        "stock_bajo_alerta": false
     },
     {
         "id": 7,
@@ -51,7 +56,8 @@
         "precio": 150,
         "stock": 149,
         "banda": "Rolling stone",
-        "imagen_principal": "voodoo.jpg"
+        "imagen_principal": "voodoo.jpg",
+        "stock_bajo_alerta": false
     },
     {
         "id": 8,
@@ -60,7 +66,8 @@
         "precio": 150,
         "stock": 12,
         "banda": "Guns and roses",
-        "imagen_principal": "guns.webp"
+        "imagen_principal": "guns.webp",
+        "stock_bajo_alerta": false
     },
     {
         "id": 9,
@@ -69,7 +76,8 @@
         "stock": 12,
         "banda": "Aerosmith",
         "imagen_principal": "aero.jpg",
-        "anio": 1994
+        "anio": 1994,
+        "stock_bajo_alerta": false
     },
     {
         "id": 10,
@@ -78,7 +86,8 @@
         "stock": 12,
         "banda": "Green Day",
         "imagen_principal": "dookie.jpg",
-        "anio": 1994
+        "anio": 1994,
+        "stock_bajo_alerta": false
     },
     {
         "id": 11,
@@ -87,7 +96,8 @@
         "stock": 55,
         "banda": "Oasis",
         "imagen_principal": "oasis.jpg",
-        "anio": 1995
+        "anio": 1995,
+        "stock_bajo_alerta": false
     },
     {
         "id": 12,
@@ -96,6 +106,7 @@
         "stock": 54,
         "banda": "Red Hot Chili Peppers",
         "imagen_principal": "blood.jpg",
-        "anio": 1991
+        "anio": 1991,
+        "stock_bajo_alerta": false
     }
 ]

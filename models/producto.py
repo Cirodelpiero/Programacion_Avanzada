@@ -11,3 +11,8 @@ class Producto:
 
         if self.stock > 0:
             self.stock -= 1
+
+    
+    
+    def stock_bajo(self):
+        return self.stock <= 5

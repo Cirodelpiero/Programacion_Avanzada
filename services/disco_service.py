@@ -1,9 +1,25 @@
 import json
 from models.disco import Disco
+
+
 def obtener_discos():
 
     with open("database/discos.json", "r") as archivo:
         discos = json.load(archivo)
+
+    for disco in discos:
+
+        producto = Disco(
+            id=disco["id"],
+            nombre=disco["nombre"],
+            precio=disco["precio"],
+            stock=disco["stock"],
+            banda=disco["banda"],
+            imagen_principal=disco["imagen_principal"],
+            anio=disco["anio"]
+        )
+
+        disco["stock_bajo_alerta"] = producto.stock_bajo()
 
     return discos
 
