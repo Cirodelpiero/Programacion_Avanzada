@@ -7,6 +7,8 @@ class Producto:
         self.precio = float(precio)
         self.stock = int(stock)
 
+
+
     def vender_unidad(self):
 
         if self.stock > 0:
@@ -16,3 +18,7 @@ class Producto:
     
     def stock_bajo(self):
         return self.stock <= 5
+    
+
+    def agotado(self):
+        return self.stock == 0

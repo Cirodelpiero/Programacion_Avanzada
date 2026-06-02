@@ -20,6 +20,7 @@ def obtener_discos():
         )
 
         disco["stock_bajo_alerta"] = producto.stock_bajo()
+        disco["agotado"] = producto.agotado()
 
     return discos
 
