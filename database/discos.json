@@ -8,7 +8,7 @@
         "banda": "RHCP",
         "imagen_principal": "califor.jpg",
         "stock_bajo_alerta": true,
-        "agotado": false
+        "agotado": true
     },
     {
         "id": 3,
