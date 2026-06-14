@@ -202,15 +202,17 @@
 
     <div class="container mt-4">
 
-        <!-- ========================================= -->
-        <!-- REMERAS -->
-        <!-- ========================================= -->
-
         <h1 class="text-center mb-4 text-warning" style="margin-top: 150px">
             REMERAS
         </h1>
 
-        <a href="/crear" class="btn btn-success mb-3">
+        <!-- ========================================= -->
+        <!-- REMERAS -->
+        <!-- ========================================= -->
+
+
+
+        <a href="/crear_remera" class="btn btn-success mb-3">
 
             <i class="fa-solid fa-screwdriver-wrench"></i>
 
@@ -256,7 +258,17 @@
 
                     <td>${{ remera.precio }}</td>
 
-                    <td>{{ remera.stock }}</td>
+                    <td>
+                        {% if remera.stock == 0 %}
+                        <span style="color:red;">Sin stock</span>
+                        {% elif remera.stock <= 3 %}
+                        <span style="color:orange;">
+                            Stock bajo ({{ remera.stock }})
+                        </span>
+                        {% else %}
+                        <span>{{ remera.stock }}</span>
+                        {% endif %}
+                    </td>
 
                     <td>{{ remera.banda }}</td>
 
@@ -272,7 +284,7 @@
 
                     <td>
 
-                        <a href="/editar/{{ remera.id }}" class="btn btn-warning">
+                        <a href="/editar_remera/{{ remera.id }}" class="btn btn-warning">
 
                             <i class="fa-solid fa-pen"></i>
 
@@ -283,7 +295,8 @@
                     <td>
 
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                            data-bs-target="#modalEliminar{{ remera.id }}">
+
+                            data-bs-target="#modalEliminarRemera{{ remera.id }}">
 
                             <i class="fa-solid fa-trash"></i>
 
@@ -299,14 +312,9 @@
 
         </table>
 
-
-        <!-- ========================================= -->
-        <!-- MODALES DISCOS -->
-        <!-- ========================================= -->
-
         {% for remera in remeras %}
 
-        <div class="modal fade" id="modalEliminar{{ remera.id }}" tabindex="-1">
+        <div class="modal fade" id="modalEliminarRemera{{ remera.id }}" tabindex="-1">
 
             <div class="modal-dialog">
 
@@ -316,7 +324,7 @@
 
                         <h5 class="modal-title">
 
-                            Eliminar Disco
+                            Eliminar Remera
 
                         </h5>
 
@@ -328,8 +336,7 @@
 
                     <div class="modal-body">
 
-                        ¿Seguro que deseas eliminar
-                        "{{ remera.nombre }}"?
+                        ¿Seguro que deseas eliminar "{{ remera.nombre }}"?
 
                     </div>
 
@@ -341,7 +348,7 @@
 
                         </button>
 
-                        <a href="/eliminar/{{ remera.id }}" class="btn btn-danger">
+                        <a href="/eliminar_remera/{{ remera.id }}" class="btn btn-danger">
 
                             Eliminar
 
@@ -357,6 +364,7 @@
 
         {% endfor %}
     </div>
+
 
 
 

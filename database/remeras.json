@@ -1,30 +1,25 @@
 [
     {
-        "id": 1,
-        "nombre": "Remera Nirvana",
-        "precio": 199,
-        "stock": 12,
-        "banda": "Nirvana",
-        "imagen_principal": "remeraNirvana.jpg",
-        "talle": "L"
-    },
-     {
         "id": 2,
         "nombre": "Remera Charly Clips Modernos",
         "precio": 199,
-        "stock": 12,
+        "stock": 1,
         "banda": "Charly Garcia",
         "imagen_principal": "remeraCharly.jpg",
-        "talle": "L"
+        "talle": "L",
+        "stock_bajo_alerta": true,
+        "agotado": false
     },
     {
         "id": 3,
         "nombre": "Remera Guns and Roses",
-        "precio": 199,
+        "precio": 198,
         "stock": 12,
         "banda": "Guns and Roses",
         "imagen_principal": "remeraGuns.jpg",
-        "talle": "M"
+        "talle": "M",
+        "stock_bajo_alerta": false,
+        "agotado": false
     },
     {
         "id": 4,
@@ -33,34 +28,42 @@
         "stock": 12,
         "banda": "Pearl Jam",
         "imagen_principal": "remeraPearljam.jpg",
-        "talle": "XL"
+        "talle": "XL",
+        "stock_bajo_alerta": false,
+        "agotado": false
     },
     {
         "id": 5,
         "nombre": "Remera RadioHead",
         "precio": 199,
-        "stock": 12,
+        "stock": 0,
         "banda": "RadioHead",
         "imagen_principal": "remeraRadio.jpg",
-        "talle": "L"
+        "talle": "L",
+        "stock_bajo_alerta": true,
+        "agotado": true
     },
     {
         "id": 6,
         "nombre": "Remera Red Hot",
-        "precio": 199,
-        "stock": 12,
+        "precio": 197,
+        "stock": 1,
         "banda": "Red Hot Chili Peppers",
         "imagen_principal": "remeraRedhot.jpg",
-        "talle": "L"
+        "talle": "L",
+        "stock_bajo_alerta": true,
+        "agotado": false
     },
     {
         "id": 7,
         "nombre": "Remera Soda Stereo",
         "precio": 199,
-        "stock": 12,
+        "stock": 11,
         "banda": "Soda Stereo",
         "imagen_principal": "remeraSoda.jpg",
-        "talle": "S"
+        "talle": "L",
+        "stock_bajo_alerta": false,
+        "agotado": false
     },
     {
         "id": 8,
@@ -69,15 +72,30 @@
         "stock": 12,
         "banda": "Collective Soul",
         "imagen_principal": "remeraCollective.jpg",
-        "talle": "S"
+        "talle": "S",
+        "stock_bajo_alerta": false,
+        "agotado": false
     },
-     {
+    {
         "id": 9,
         "nombre": "Remera Stone Temple Pilots",
         "precio": 99,
-        "stock": 18,
+        "stock": 17,
         "banda": "Stone Temple Pilots",
         "imagen_principal": "remeraStoneTemple.jpg",
-        "talle": "S"
+        "talle": "S",
+        "stock_bajo_alerta": false,
+        "agotado": false
+    },
+    {
+        "id": 10,
+        "nombre": "Remera Rolling Stone",
+        "precio": 150,
+        "stock": 1,
+        "banda": "Rolling Stones",
+        "imagen_principal": "remera rolling.jpg",
+        "talle": "XL",
+        "stock_bajo_alerta": true,
+        "agotado": false
     }
 ]
