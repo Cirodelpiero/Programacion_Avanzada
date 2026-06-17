@@ -7,3 +7,16 @@ def obtener_tazas():
         tazas = json.load(archivo)
 
     return tazas
+
+
+def buscar_taza(id):
+
+    tazas = obtener_tazas()
+
+    for taza in tazas:
+
+        if taza["id"] == id:
+
+            return taza
+
+    return None
