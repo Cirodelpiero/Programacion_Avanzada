@@ -18,6 +18,7 @@ from services.remera_service import eliminar_remera
 
 
 from services.taza_service import obtener_tazas
+from services.taza_service import buscar_taza
 
 #from models.disco import Disco
 #from models.remera import Remera
@@ -63,6 +64,14 @@ def ver_disco(id):
 
     return render_template(
         "detalle_disco.html", disco=disco)
+
+@app.route("/taza/<int:id>")
+def ver_taza(id):
+
+    taza = buscar_taza(id)
+
+    return render_template(
+        "detalle_taza.html", taza=taza)
 
 
 @app.route("/crear", methods=["GET", "POST"])
@@ -267,3 +276,6 @@ def comprar_remera_route(id):
 def ejemplo():
     return render_template("ejemplo.html")
 
+
+if __name__ == "__main__":
+    app.run(debug=True)
