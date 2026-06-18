@@ -119,5 +119,14 @@
         "anio": 1991,
         "stock_bajo_alerta": false,
         "agotado": false
+    },
+    {
+        "id": 13,
+        "nombre": "Pampas Reggae",
+        "precio": 4,
+        "stock": 22,
+        "banda": "Los Pericos",
+        "imagen_principal": "pericos.jpg",
+        "anio": 1994
     }
 ]
