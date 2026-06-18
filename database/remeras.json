@@ -91,11 +91,11 @@
         "id": 10,
         "nombre": "Remera Rolling Stone",
         "precio": 150,
-        "stock": 1,
+        "stock": 0,
         "banda": "Rolling Stones",
         "imagen_principal": "remera rolling.jpg",
         "talle": "XL",
         "stock_bajo_alerta": true,
-        "agotado": false
+        "agotado": true
     }
 ]
