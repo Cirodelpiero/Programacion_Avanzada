@@ -34,7 +34,7 @@ def inicio():
     discos = obtener_discos()
     remeras = obtener_remeras()
     tazas = obtener_tazas()
-    tazas = [] 
+     
 
     return render_template(
         "index.html",

@@ -80,7 +80,7 @@
         "id": 9,
         "nombre": "Remera Stone Temple Pilots",
         "precio": 99,
-        "stock": 17,
+        "stock": 14,
         "banda": "Stone Temple Pilots",
         "imagen_principal": "remeraStoneTemple.jpg",
         "talle": "S",
@@ -91,11 +91,11 @@
         "id": 10,
         "nombre": "Remera Rolling Stone",
         "precio": 150,
-        "stock": 1,
+        "stock": 0,
         "banda": "Rolling Stones",
         "imagen_principal": "remera rolling.jpg",
         "talle": "XL",
         "stock_bajo_alerta": true,
-        "agotado": false
+        "agotado": true
     }
 ]
